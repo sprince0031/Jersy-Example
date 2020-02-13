@@ -1,8 +1,17 @@
 <html>
 <body>
     <h2>Jersey RESTful Web Application!</h2>
-    <p><a href="webapi/myresource">Jersey resource</a>
-    <p>Visit <a href="http://jersey.java.net">Project Jersey website</a>
-    for more information on Jersey!
+    <p><a href="webapi/myres">Jersey resource</a>
+    <p>Hello there! Testing maven tomcat plugin for deploying!</p>
+    <p><a href="webapi/myres/Sprince0031">Click this to see use of URL parameters.</a></p><br>
+    <form action="webapi/myres/product" method="post">
+        Product Id: <input type="text" name="id"><br>
+        Product Name: <input type="text" name="name"><br>
+        Price: <input type="text" name="price"><br>
+        <input type="submit" value="Add Product">
+    </form><br>
+    <form action="webapi/myres/joke/random" method="get">
+        <input type="submit" value="Get Random Joke!">
+    </form>
 </body>
 </html>
