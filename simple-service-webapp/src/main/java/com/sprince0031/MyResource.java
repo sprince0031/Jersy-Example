@@ -28,7 +28,7 @@ public class MyResource {
     }
 
     @GET
-    @Path("/{param}")
+    @Path("{param}")
     @Produces(MediaType.TEXT_HTML)
     public Response getMessage(@PathParam("param") String message) {
         String output = "Note: Change the end of the URI to change the displayed message.<br><h1>Jersey says: " + message + "</h1>";
@@ -36,7 +36,7 @@ public class MyResource {
     }
 
     @GET  
-    @Path("/{year}/{month}/{day}")  
+    @Path("{year}/{month}/{day}")  
     public Response getDate(  
             @PathParam("year") int year,  
             @PathParam("month") int month,   
@@ -48,7 +48,7 @@ public class MyResource {
     }  
 
     @POST
-    @Path("/product")
+    @Path("product")
     public Response addProduct(
         @FormParam("id") int id,
         @FormParam("name") String prodName,
