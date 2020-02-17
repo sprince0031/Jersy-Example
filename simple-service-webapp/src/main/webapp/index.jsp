@@ -4,7 +4,7 @@
     <p><a href="webapi/myres">Jersey resource</a>
     <p>Hello there! Testing maven tomcat plugin for deploying!</p>
     <p><a href="webapi/myres/Sprince0031">Click this to see use of URL parameters.</a></p><br>
-    <form action="webapi/myres/product" method="post">
+    <form action="webapi/product/add" method="post">
         Product Id: <input type="text" name="id"><br>
         Product Name: <input type="text" name="name"><br>
         Price: <input type="text" name="price"><br>
