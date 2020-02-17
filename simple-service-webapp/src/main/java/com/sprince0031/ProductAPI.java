@@ -11,10 +11,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 @Path("product")
-public class AddProduct {
+public class ProductAPI {
 
     static ArrayList<Product> productList = new ArrayList<>();
 

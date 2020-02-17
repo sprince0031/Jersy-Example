@@ -1,8 +1,6 @@
 package com.sprince0031;
 
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -46,15 +44,5 @@ public class MyResource {
    
        return Response.status(200).entity("getDate is called, year/month/day : " + date).build();  
     }  
-
-    @POST
-    @Path("product")
-    public Response addProduct(
-        @FormParam("id") int id,
-        @FormParam("name") String prodName,
-        @FormParam("price") double price) {
-            String output = "Product added successfully!<br>Product id: " + id + "<br>Product name: " + prodName + "<br>Price: " + price;
-            return Response.status(201).entity(output).build();
-    }
 
 }
