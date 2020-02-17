@@ -32,9 +32,9 @@ public class ProductAPI {
     @POST
     @Path("add")
     public Response addProduct(
-        @FormParam("id") int id,
         @FormParam("name") String prodName,
         @FormParam("price") double price) {
+            int id = productList.size() + 1;
             productList.add(new Product(id, prodName, price));
             String output = "Product added successfully!<br>Product id: " + id + "<br>Product name: " + prodName + "<br>Price: " + price;
             return Response.status(201).entity(output).build();
